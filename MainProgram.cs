@@ -10,7 +10,7 @@ namespace Hex_Converter_Binary_Converter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("***Binary and Hex Coverter 1.2*** \n <Press enter to continue>");
+            Console.WriteLine("***Binary and Hex Coverter 1.0*** \n <Press enter to continue>");
             Console.ReadLine();
 
             Start:
