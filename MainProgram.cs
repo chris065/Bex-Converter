@@ -10,7 +10,8 @@ namespace Hex_Converter_Binary_Converter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("***Binary and Hex Coverter 1.1*** \n <Press enter to continue>");
+            /*every time there is an edit / update, change the version number (appart from comments)*/
+            Console.WriteLine("***Binary and Hex Coverter 1.2*** \n <Press enter to continue>");
             Console.ReadLine();
 
             Start:
@@ -19,7 +20,8 @@ namespace Hex_Converter_Binary_Converter
             int keypress = Convert.ToInt32 (Console.ReadLine());
 
             if (keypress == 1)
-            {                     
+            {    
+                //goes straight into conversion
                 Console.Write("Enter a decimal number: ");
                 int decimalNumber = int.Parse(Console.ReadLine());
 
@@ -40,7 +42,7 @@ namespace Hex_Converter_Binary_Converter
                 int i = 1, j, temp = 0;
                 char[] hexadecimalNumber = new char[100];
                 char temp1;
-                Console.WriteLine("Enter a Decimal Number: ");
+                Console.WriteLine("Enter a decimal number: ");
                 decimalNumber = int.Parse(Console.ReadLine());
                 quotient = decimalNumber;
                 while (quotient != 0)
@@ -60,6 +62,7 @@ namespace Hex_Converter_Binary_Converter
                 Console.Read();
                 
             }
+            //this might have to be changed.
             Console.WriteLine();
             Console.ReadLine();
             goto Start; 
