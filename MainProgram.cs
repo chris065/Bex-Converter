@@ -10,7 +10,7 @@ namespace Hex_Converter_Binary_Converter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("***Binary and Hex Coverter 1.0*** \n <Press enter to continue>");
+            Console.WriteLine("***Binary and Hex Coverter 1.1*** \n <Press enter to continue>");
             Console.ReadLine();
 
             Start:
@@ -20,9 +20,9 @@ namespace Hex_Converter_Binary_Converter
 
             if (keypress == 1)
             {
-                Console.WriteLine("Lets Convert Bianry! <Press enter to continue>");
-                Console.ReadLine();
-
+                Console.Writeline("You have selected Binary <press enter to continue>");
+                Console.Readline();
+                
                 Console.Write("Decimal: ");
                 int decimalNumber = int.Parse(Console.ReadLine());
 
