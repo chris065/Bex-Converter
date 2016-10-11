@@ -19,11 +19,8 @@ namespace Hex_Converter_Binary_Converter
             int keypress = Convert.ToInt32 (Console.ReadLine());
 
             if (keypress == 1)
-            {
-                Console.Writeline("You have selected Binary <press enter to continue>");
-                Console.Readline();
-                
-                Console.Write("Decimal: ");
+            {                     
+                Console.Write("Enter a decimal number: ");
                 int decimalNumber = int.Parse(Console.ReadLine());
 
                 int remainder;
@@ -34,14 +31,11 @@ namespace Hex_Converter_Binary_Converter
                     decimalNumber /= 2;
                     result = remainder.ToString() + result;
                 }
-                Console.WriteLine("Binary:  {0}", result);
+                Console.WriteLine("Binary =  {0}", result);
                 Console.ReadLine();
             }
             else if (keypress == 2)
             {
-                Console.WriteLine("lets Convert to Hex! <Press enter to continue>");
-                Console.ReadLine();
-
                 int decimalNumber, quotient;
                 int i = 1, j, temp = 0;
                 char[] hexadecimalNumber = new char[100];
@@ -60,7 +54,7 @@ namespace Hex_Converter_Binary_Converter
                     hexadecimalNumber[i++] = temp1;
                     quotient = quotient / 16;
                 }
-                Console.Write("Equivalent HexaDecimal Number is: ");
+                Console.Write("HexaDecimal = ");
                 for (j = i - 1; j > 0; j--)
                     Console.Write(hexadecimalNumber[j]);
                 Console.Read();
